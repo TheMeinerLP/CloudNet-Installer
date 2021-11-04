@@ -43,7 +43,7 @@ install_java() {
 				rm "/etc/apt/apt.conf.d/100disablechecks"
 				return
 			elif [ "$VERSION_ID" -gt "8" ]; then
-				echo "Found modern Debian, Java 8 or later should be the default."
+				echo "Found modern Debian, Java 11 or later should be the default."
 				echo "Spigot 1.8 might not work, anyone using it is highly recommended to switch to a supported version."
 				install_package 'default-jre-headless'
 				return
@@ -64,25 +64,25 @@ install_java() {
 				install_package 'openjdk-8-jre-headless'
 				return
 			else
-				install_package 'openjdk-8-jre-headless'
+				install_package 'openjdk-11-jre-headless'
 				return
 			fi
 		elif [ "$ID" = "alpine" ]; then
 			echo "Choosing correct $ID package."
-			install_package 'openjdk8-jre-base'
+			install_package 'openjdk11-jre-base'
 			return
 		elif [ "$ID" = "arch" ]; then
 			echo "Choosing correct $ID package."
-			install_package 'jre8-openjdk-headless'
+			install_package 'jre11-openjdk-headless'
 			return
 		elif [ "$ID" = "centos" ] || [ "$ID" = "fedora" ]; then
 			echo "Choosing correct $ID package."
-			install_package 'java-1.8.0-openjdk-headless'
+			install_package 'java-11-openjdk-headless'
 			return
 		fi
 
 		echo "Trying to install on $NAME using default package"
-		install_package 'openjdk-8-jre-headless'
+		install_package 'openjdk-11-jre-headless'
 	fi
 
 	echo "Could not install Java."
