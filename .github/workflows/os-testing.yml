@@ -1,14 +1,14 @@
 name: 'Operating testing workflow'
 
-on: push
-
+on:
+  - push
 jobs:
   debian:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        container: ['debian:jessie-slim', 'debian:stretch-slim', 'debian:buster-slim', 'debian:testing-slim']
+        container: [ 'debian:jessie-slim', 'debian:stretch-slim', 'debian:buster-slim', 'debian:testing-slim' ]
     container:
       image: ${{ matrix.container }}
     steps:
@@ -25,7 +25,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container: ['ubuntu:16.04', 'ubuntu:18.04', 'ubuntu:18.10', 'ubuntu:19.04', 'ubuntu:19.10']
+        container: [ 'ubuntu:16.04', 'ubuntu:18.04', 'ubuntu:18.10', 'ubuntu:19.04', 'ubuntu:19.10' ]
     container:
       image: ${{ matrix.container }}
     steps:
@@ -42,7 +42,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container: ['alpine:3.7', 'alpine:3.8', 'alpine:3.9']
+        container: [ 'alpine:3.7', 'alpine:3.8', 'alpine:3.9' ]
     container:
       image: ${{ matrix.container }}
     steps:
@@ -59,7 +59,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container: ['archlinux/base']
+        container: [ 'archlinux/base' ]
     container:
       image: ${{ matrix.container }}
     steps:
@@ -74,7 +74,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container: ['centos:7']
+        container: [ 'centos:7' ]
     container:
       image: ${{ matrix.container }}
     steps:
@@ -89,7 +89,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container: ['fedora:26', 'fedora:27', 'fedora:28', 'fedora:29', 'fedora:30', 'fedora:31', 'fedora:32']
+        container: [ 'fedora:26', 'fedora:27', 'fedora:28', 'fedora:29', 'fedora:30', 'fedora:31', 'fedora:32' ]
     container:
       image: ${{ matrix.container }}
     steps:
