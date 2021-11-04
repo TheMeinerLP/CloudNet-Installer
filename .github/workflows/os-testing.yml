@@ -59,7 +59,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container: [ 'archlinux/base' ]
+        container: [ 'archlinux:base' ]
     container:
       image: ${{ matrix.container }}
     steps:
