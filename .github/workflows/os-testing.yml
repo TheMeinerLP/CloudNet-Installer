@@ -3,99 +3,99 @@ name: 'Operating testing workflow'
 on:
   - push
 jobs:
-  - debian:
-      runs-on: ubuntu-latest
-      strategy:
-        fail-fast: false
-        matrix:
-          container: [ 'debian:jessie-slim', 'debian:stretch-slim', 'debian:buster-slim', 'debian:testing-slim' ]
-      container:
-        image: ${{ matrix.container }}
-      steps:
-        - name: 'Install curl'
-          run: 'apt-get update && apt-get install curl -y'
-        - name: 'Go to root'
-          run: 'cd /root/'
-        - name: 'Create test folder'
-          run: 'mkdir CloudNet-Test && cd CloudNet-Test'
-        - name: 'Test Script'
-          run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
-  - ubuntu:
-      runs-on: ubuntu-latest
-      strategy:
-        fail-fast: false
-        matrix:
-          container: [ 'ubuntu:16.04', 'ubuntu:18.04', 'ubuntu:18.10', 'ubuntu:19.04', 'ubuntu:19.10' ]
-      container:
-        image: ${{ matrix.container }}
-      steps:
-        - name: 'Install curl'
-          run: 'apt-get update && apt-get install curl -y'
-        - name: 'Go to root'
-          run: 'cd /root/'
-        - name: 'Create test folder'
-          run: 'mkdir CloudNet-Test && cd CloudNet-Test'
-        - name: 'Test Script'
-          run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
-  - alpine:
-      runs-on: ubuntu-latest
-      strategy:
-        fail-fast: false
-        matrix:
-          container: [ 'alpine:3.7', 'alpine:3.8', 'alpine:3.9' ]
-      container:
-        image: ${{ matrix.container }}
-      steps:
-        - name: 'Install curl'
-          run: 'apk add --no-cache bash curl'
-        - name: 'Go to root'
-          run: 'cd /root/'
-        - name: 'Create test folder'
-          run: 'mkdir CloudNet-Test && cd CloudNet-Test'
-        - name: 'Test Script'
-          run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
-  - archlinux:
-      runs-on: ubuntu-latest
-      strategy:
-        fail-fast: false
-        matrix:
-          container: [ 'archlinux/base' ]
-      container:
-        image: ${{ matrix.container }}
-      steps:
-        - name: 'Go to root'
-          run: 'cd /root/'
-        - name: 'Create test folder'
-          run: 'mkdir CloudNet-Test && cd CloudNet-Test'
-        - name: 'Test Script'
-          run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
-  - centos:
-      runs-on: ubuntu-latest
-      strategy:
-        fail-fast: false
-        matrix:
-          container: [ 'centos:7' ]
-      container:
-        image: ${{ matrix.container }}
-      steps:
-        - name: 'Go to root'
-          run: 'cd /root/'
-        - name: 'Create test folder'
-          run: 'mkdir CloudNet-Test && cd CloudNet-Test'
-        - name: 'Test Script'
-          run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
-  - fedora:
-      runs-on: ubuntu-latest
-      strategy:
-        fail-fast: false
-        matrix:
-          container: [ 'fedora:26', 'fedora:27', 'fedora:28', 'fedora:29', 'fedora:30', 'fedora:31', 'fedora:32' ]
-      container:
-        image: ${{ matrix.container }}
-      steps:
-        - name: 'Go to root'
-          run: 'cd /root/'
-        - name: 'Create test folder'
-          run: 'mkdir CloudNet-Test && cd CloudNet-Test'
-        - name: 'Test Script'
-          run: 'curl -sL "ttps://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
+  debian:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        container: [ 'debian:jessie-slim', 'debian:stretch-slim', 'debian:buster-slim', 'debian:testing-slim' ]
+    container:
+      image: ${{ matrix.container }}
+    steps:
+      - name: 'Install curl'
+        run: 'apt-get update && apt-get install curl -y'
+      - name: 'Go to root'
+        run: 'cd /root/'
+      - name: 'Create test folder'
+        run: 'mkdir CloudNet-Test && cd CloudNet-Test'
+      - name: 'Test Script'
+        run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
+  ubuntu:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        container: [ 'ubuntu:16.04', 'ubuntu:18.04', 'ubuntu:18.10', 'ubuntu:19.04', 'ubuntu:19.10' ]
+    container:
+      image: ${{ matrix.container }}
+    steps:
+      - name: 'Install curl'
+        run: 'apt-get update && apt-get install curl -y'
+      - name: 'Go to root'
+        run: 'cd /root/'
+      - name: 'Create test folder'
+        run: 'mkdir CloudNet-Test && cd CloudNet-Test'
+      - name: 'Test Script'
+        run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
+  alpine:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        container: [ 'alpine:3.7', 'alpine:3.8', 'alpine:3.9' ]
+    container:
+      image: ${{ matrix.container }}
+    steps:
+      - name: 'Install curl'
+        run: 'apk add --no-cache bash curl'
+      - name: 'Go to root'
+        run: 'cd /root/'
+      - name: 'Create test folder'
+        run: 'mkdir CloudNet-Test && cd CloudNet-Test'
+      - name: 'Test Script'
+        run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
+  archlinux:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        container: [ 'archlinux/base' ]
+    container:
+      image: ${{ matrix.container }}
+    steps:
+      - name: 'Go to root'
+        run: 'cd /root/'
+      - name: 'Create test folder'
+        run: 'mkdir CloudNet-Test && cd CloudNet-Test'
+      - name: 'Test Script'
+        run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
+  centos:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        container: [ 'centos:7' ]
+    container:
+      image: ${{ matrix.container }}
+    steps:
+      - name: 'Go to root'
+        run: 'cd /root/'
+      - name: 'Create test folder'
+        run: 'mkdir CloudNet-Test && cd CloudNet-Test'
+      - name: 'Test Script'
+        run: 'curl -sL "https://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
+  fedora:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        container: [ 'fedora:26', 'fedora:27', 'fedora:28', 'fedora:29', 'fedora:30', 'fedora:31', 'fedora:32' ]
+    container:
+      image: ${{ matrix.container }}
+    steps:
+      - name: 'Go to root'
+        run: 'cd /root/'
+      - name: 'Create test folder'
+        run: 'mkdir CloudNet-Test && cd CloudNet-Test'
+      - name: 'Test Script'
+        run: 'curl -sL "ttps://themeinerlp.github.io/CloudNet-Installer/install.sh" | bash'
