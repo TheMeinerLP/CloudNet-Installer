@@ -1,5 +1,7 @@
 name: 'Operating testing workflow'
 
+on: push
+
 jobs:
   debian:
     runs-on: ubuntu-latest
