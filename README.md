@@ -7,8 +7,8 @@
 [![Github Actions](https://github.com/TheMeinerLP/CloudNet-Installer/actions/workflows/os-testing.yml/badge.svg)](https://github.com/TheMeinerLP/CloudNet-Installer/actions/workflows/os-testing.yml)
 
 [![GitHub issues](https://img.shields.io/github/issues/TheMeinerLP/CloudNet-Installer.svg)](https://github.com/TheMeinerLP/CloudNet-Installer/issues)
-[![GitHub stars](https://img.shields.io/github/stars/TheMeinerLP/CloudNet-Installer.svg)](https://github.com/TheMeinerLP/CloudNet-Installer/stargazers)
-[![GitHub license](https://img.shields.io/github/license/TheMeinerLP/CloudNet-Installer.svg)](https://github.com/TheMeinerLP/CloudNet-Installer/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/TheMeinerLP/CloudNet-Installer)](https://github.com/TheMeinerLP/CloudNet-Installer/stargazers)
+[![GitHub license](https://img.shields.io/github/license/TheMeinerLP/CloudNet-Installer)](https://github.com/TheMeinerLP/CloudNet-Installer)
 
 
 Installer for the [Cloud Network Environment Technology](https://github.com/CloudNetService/CloudNet).
