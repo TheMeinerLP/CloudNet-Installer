@@ -74,7 +74,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container: [ 'centos:7', 'centos:8']
+        container: [ 'centos:7']
     container:
       image: ${{ matrix.container }}
     steps:
