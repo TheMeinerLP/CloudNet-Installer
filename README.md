@@ -1,7 +1,7 @@
 # CloudNet-Installer
 
 
-This repo is inspired and modified code of [CloudNet-Installer](https://github.com/GiantTreeLP/CloudNet-Installer) from [GaintTreeLP](https://github.com/GiantTreeLP)
+**This repo is inspired and modified code of [CloudNet-Installer](https://github.com/GiantTreeLP/CloudNet-Installer) from [GaintTreeLP](https://github.com/GiantTreeLP)**
 
 ---
 
