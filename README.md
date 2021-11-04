@@ -52,20 +52,24 @@ All tests have been conducted with the slim images available for Docker, where p
 | Distribution   | Version                   | Tested/Compatible |
 | :------------- | :------------------------ | :---------------- |
 | **Debian**     | testing                   | ✅                 |
+| Debian         | 11 (Bullseye)             | ✅                 |
 | Debian         | 10 (Buster)               | ✅                 |
 | Debian         | 9 (Stretch)               | ✅                 |
 | Debian         | 8 (Jessie)                | ✅                 |
-| **Ubuntu**     | 19.10 (Eoan Ermine)       | ✅                 |
-| Ubuntu         | 19.04 (Disco Dingo)       | ✅                 |
-| Ubuntu         | 18.10 (Cosmic Cuttlefish) | ✅                 |
+| **Ubuntu**     | 20.04 (Focal Fossa)       | ✅                 |
 | Ubuntu         | 18.04 (Bionic Beaver)     | ✅                 |
 | Ubuntu         | 16.04 (Xenial Xerus)      | ✅                 |
+| Ubuntu         | 14.04 (Trusty Tahr)       | ✅                 |
 | **Alpine**     | 3.9                       | ✅                 |
 | Alpine         | 3.8                       | ✅                 |
 | Alpine         | 3.7                       | ✅                 |
 | **Arch Linux** | Rolling                   | ✅                 |
 | **CentOS**     | 7                         | ✅                 |
-| **Fedora**     | 31                        | ✅                 |
+| **Fedora**     | 35                        | ✅                 |
+| Fedora         | 34                        | ✅                 |
+| Fedora         | 33                        | ✅                 |
+| Fedora         | 32                        | ✅                 |
+| Fedora         | 31                        | ✅                 |
 | Fedora         | 30                        | ✅                 |
 | Fedora         | 29                        | ✅                 |
 | Fedora         | 28                        | ✅                 |
