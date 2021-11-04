@@ -11,7 +11,7 @@
 [![GitHub license](https://img.shields.io/github/license/TheMeinerLP/CloudNet-Installer)](https://github.com/TheMeinerLP/CloudNet-Installer)
 
 
-Installer for the [Cloud Network Environment Technology](https://github.com/CloudNetService/CloudNet).
+Installer for the [Cloud Network Environment Technology](https://github.com/CloudNetService/CloudNet-v3).
 
 Uses [`pacapt`](https://github.com/icy/pacapt) for compatibility with as many distributions as possible.
 
