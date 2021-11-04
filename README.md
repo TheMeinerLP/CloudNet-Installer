@@ -4,10 +4,11 @@
 **This repo is inspired and modified code of [CloudNet-Installer](https://github.com/GiantTreeLP/CloudNet-Installer) from [GaintTreeLP](https://github.com/GiantTreeLP)**
 
 ---
+[![Github Actions](https://github.com/TheMeinerLP/CloudNet-Installer/actions/workflows/os-testing.yml/badge.svg)](https://github.com/TheMeinerLP/CloudNet-Installer/actions/workflows/os-testing.yml)
 
 [![GitHub issues](https://img.shields.io/github/issues/TheMeinerLP/CloudNet-Installer.svg)](https://github.com/TheMeinerLP/CloudNet-Installer/issues)
 [![GitHub stars](https://img.shields.io/github/stars/TheMeinerLP/CloudNet-Installer.svg)](https://github.com/TheMeinerLP/CloudNet-Installer/stargazers)
-[![GitHub license](https://img.shields.io/github/license/TheMeinerLP/CloudNet-Installer.svg)](https://github.com/TheMeinerLP/CloudNet-Installer/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/TheMeinerLP/CloudNet-Installer.svg)](https://github.com/TheMeinerLP/CloudNet-Installer/blob/main/LICENSE)
 
 
 Installer for the [Cloud Network Environment Technology](https://github.com/CloudNetService/CloudNet).
