@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container: [ 'debian:jessie-slim', 'debian:stretch-slim', 'debian:buster-slim', 'debian:bullyeye-slim', 'debian:testing-slim' ]
+        container: [ 'debian:jessie-slim', 'debian:stretch-slim', 'debian:buster-slim', 'debian:bullseye-slim', 'debian:testing-slim' ]
     container:
       image: ${{ matrix.container }}
     steps:
